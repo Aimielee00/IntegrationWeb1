@@ -1,0 +1,113 @@
+/* Fait Par Emilie Fortier-Marcoux
+Le 18 Mars 2020
+Examen Final integration*/
+
+
+/*img bg*/
+
+
+
+/*Les parallax*/
+html,body { margin:0; height:100%;}
+.parallax {
+    background-image: url("../medias/vagues.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
+.parallax2 {
+    background-image: url("../medias/img1.jpg");
+    min-height: 50rem;/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.desc{
+    background-image:  url("../medias/img3.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+
+/*footer*/
+.footer{
+    background-color: #86cfda;
+}
+.footerlien{
+    color: whitesmoke;
+}
+.footerlien:hover{
+    color: #494f54;
+    text-underline-style: dotted;
+}
+
+/*couleurs*/
+.white{
+    color: white;
+}
+.blue{
+    background-color: rgba(30,90,180,0.2);
+}
+
+/*carousel*/
+#Carousel{
+    object-fit: cover;
+}
+
+/*Headings*/
+h1, h2, h3{
+    font-weight: bold;
+    color: slategrey;
+}
+h1, h2, h3, p {
+    color: whitesmoke;
+}
+
+/*formulaire */
+form {
+    color: grey;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+#formulaire{
+    color: #86cfda;
+}
+
+
+/*Queries */
+@media only screen and (max-width: 480px){
+    h2, h3{
+        display:none;
+    }
+}
+.cache{
+    display: none;
+}
+#cache1{
+    display:block;
+}
+}
+
+@media screen and (min-width: 481px) and (max-width: 1199px) {
+#cache1{
+        display: none;
+    }
+    .cache{
+        display: block;
+    }
+}
+@media screen and (min-width: 1200px) {
+#cache1{
+        display: none;
+    }
+    .cache{
+        display: block;
+    }
+}
