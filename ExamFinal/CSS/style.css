@@ -140,7 +140,11 @@ iframe{
     display: none
 }
 .videoBG{
-    display: none}
+    display: none
+}
+    .parallax1{
+        display: block;
+    }
 }
 
 
@@ -161,6 +165,9 @@ iframe{
         display: none
     }
     .videoBG{
+        display: none;
+    }
+    .parallax1{
         display: none;
     }
 }
@@ -184,6 +191,10 @@ iframe{
     }
     .videoBG{
         display: block;
+    }
+
+    .parallax1{
+        display: none;
     }
 }
 
