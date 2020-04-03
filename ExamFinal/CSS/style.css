@@ -3,11 +3,12 @@ Le 18 Mars 2020
 Examen Final integration*/
 
 
-/*img bg*/
+/*Fonte*/
 
 
 
-/*Les parallax*/
+
+/*Les parallax & Images*/
 html,body { margin:0; height:100%;}
 .parallax {
     background-image: url("../medias/vagues.jpg");
@@ -32,6 +33,11 @@ html,body { margin:0; height:100%;}
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
+.vague{
+    background-image:url("../medias/img7.jpg");
+    background-size: cover;
+    min-height: 25%;
+}
 
 
 /*footer*/
@@ -55,17 +61,28 @@ html,body { margin:0; height:100%;}
 }
 
 /*carousel*/
-#Carousel{
-    object-fit: cover;
+.imgCarousel{
+    opacity:0.3;
 }
 
-/*Headings*/
+/*Écriture*/
 h1, h2, h3{
     font-weight: bold;
     color: slategrey;
+
 }
-h1, h2, h3, p {
+h1, h2, h3, h4, h5, h6, p{
     color: whitesmoke;
+    font-family: "Quicksand Light";
+}
+p{
+    color: whitesmoke;
+    font-size:1.5rem;
+}
+
+
+#Section2P2{
+    color: #b3ceff;
 }
 
 /*formulaire */
@@ -80,9 +97,14 @@ form {
     color: #86cfda;
 }
 
+/*Modals*/
+.modal-title, .modal-p {
+color: #86cfda;
+}
+
 
 /*Queries */
-@media only screen and (max-width: 480px){
+@media only screen and (max-width: 576px){
     h2, h3{
         display:none;
     }
@@ -93,16 +115,32 @@ form {
 #cache1{
     display:block;
 }
+.carousel{
+    display: none;
+}
+.vague{
+    display: block;
 }
 
-@media screen and (min-width: 481px) and (max-width: 1199px) {
+}
+
+
+@media screen and (min-width: 575px) and (max-width: 1199px) {
 #cache1{
         display: none;
     }
     .cache{
         display: block;
     }
+    .carousel{
+        display: block;
+    }
+    .vague{
+        display: none;
+    }
 }
+
+
 @media screen and (min-width: 1200px) {
 #cache1{
         display: none;
@@ -110,4 +148,57 @@ form {
     .cache{
         display: block;
     }
+    .carousel{
+        display: block;
+    }
+    .vague{
+        display: none;
+    }
+
+}
+
+/*Video Background, Index*/
+
+
+.grey{
+    color: #494f54;
+}
+
+#videoBG {
+    position: relative;
+    background-color : black;
+    height: 100%;
+    min-height: 25rem;
+    width: 100%;
+    overflow: hidden;
+}
+#videoBG iframe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 0;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform : translateX(-50%) translateY(-50%);
+    -webkit-transform : translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+#videoBG .container {
+    position: relative;
+    z-index: 2;
+}
+
+#videoBG .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color : black;
+    opacity: 0.5;
+    z-index: 1;
 }

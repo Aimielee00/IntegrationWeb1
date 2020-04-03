@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="CSS/bootstrap.css">
     <link rel="stylesheet" href="CSS/bootstrap-grid.css">
     <link rel="stylesheet" href="CSS/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
@@ -30,24 +31,39 @@
 
 </header>
 
-<!-- Section banniere 100% largeur et hauteur -->
-<section>
+<!-- Section Carousel-->
     <div id="Carousel" class="carousel slide" data-ride="carousel">
         <ul class="carousel-indicators">
             <li data-target=".../medias" data-slide-to="0" class="active"></li>
             <li data-target=".../medias" data-slide-to="1"></li>
             <li data-target=".../medias" data-slide-to="2"></li>
+            <li data-target=".../medias" data-slide-to="3"></li>
         </ul>
 
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="w-100 " src="medias/img1.jpg" alt="feuilles">
+                <img class="w-100" src="medias/img4.jpg">
+                <div class="carousel-caption align-items-center">
+                    <h1>Ca</h1>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100 " src="medias/img2.jpg" alt="chandelles">
+                <img class="w-100" src="medias/img5.jpg">
+                <div class="carousel-caption">
+                    <h1>Va</h1>
+                </div>
             </div>
             <div class="carousel-item">
-                <img class="w-100 " src="medias/img3.jpg" alt="quai">
+                <img class="w-100" src="medias/img6.jpg">
+                <div class="carousel-caption">
+                    <h1>Bien</h1>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="w-100" src="medias/img7.jpg">
+                <div class="carousel-caption">
+                    <h1>Aller.</h1>
+                </div>
             </div>
 
         </div>
@@ -58,35 +74,118 @@
             <span class="carousel-control-next-icon"></span>
         </a>
     </div>
-</section>
+</div>
+
+<!-- Section alternative au Carousel -->
+<div class="container-fluid vague h-100">
+    <div class="row align-items-center text-center h-100">
+        <div class="col-12 text-center">
+<h1>Ca va bien aller</h1>
+        </div>
+    </div>
+</div>
+
+<!--Section-->
+<div class="container-fluid h-50 bg-light">
+    <div class="row h-50 align-items-end">
+        <div class="col-12 text-center ">
+            <h2 id="Section2P2">Comment vous sentez-vous aujourd'hui?</h2>
+        </div>
+    </div>
+</div>
+
 
 <!--Section font-awesome-->
-<div class="container-fluid ">
-        <div class= "row text-center align-items-center">
-            <div class = "col-xl-3 col-md-4 col-sm-12 bg-light ">
-                <p>Rien me stress pantoute, moi jsors au tim hortons a chaque jours.
-                </p>
+<div class="container-fluid">
+<div class="row bg-dark">
+        <div class= "card col-4 text-center">
+                <p class="bg-dark">Rien me stress pantoute, moi jsors au tim hortons a chaque jour.</p>
                 <i class="far fa-laugh-beam"></i><br>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal1">
+                <button type="button" class="btn blue" data-toggle="modal" data-target="#modal1">
                     J'pas stressé.
                 </button>
             </div>
-            <div class = "col-xl-3 col-md-4 col-sm-12 bg-primary">
-                <p>Jtun peu stressée, jrespecte les consignes et tout va bien aller.</p>
+
+            <div class = "card col-4 text-center">
+
+                <p class="bg-dark">Jtun peu stressée,<br> jrespecte les consignes et tout va bien aller.</p>
                 <i class="fas fa-grin-beam-sweat"></i><br>
-                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#modal2">
+                <button type="button" class="btn blue" data-toggle="modal" data-target="#modal2">
                     Moi ça va.
                 </button>
             </div>
-            <div class = "col-xl-3 col-md-4 col-sm-12 bg-warning">
-                <p> ON VA TOUTE MOURRIR. </p>
+
+            <div class = "card col-4 text-center">
+                <p class="bg-dark">ON VA TOUTE MOURRIR.</p>
                 <i class="fas fa-sad-cry"></i><br>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal3">
-                    MAY DAY. m
+                <button type="button" class="btn blue" data-toggle="modal" data-target="#modal3">
+                    MAY DAY.
                 </button>
             </div>
         </div>
 </div>
+</div>
+
+<!-- Modals associés aux btns font-awesomes -->
+<div class="modal" tabindex="-1" role="dialog" id="modal1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Alors vous ne vivez aucun stress?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-p">Tant mieux</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Parfait! </h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-p">Voici un vidéo de vagues</p>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/f77SKdyn-1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" tabindex="-1" role="dialog" id="modal3">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">En mode panique?</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-p">Voiçi un vidéo de méditation Express</p>
+                <iframe width="300" height="300" src="https://www.youtube.com/embed/rfh-f_zNzo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 
 <!--Footer-->
