@@ -2,14 +2,8 @@
 Le 18 Mars 2020
 Examen Final integration*/
 
-
-
-
-
-
 /*Les parallax & Images*/
 html,body { margin:0; height:100%;}
-
 .parallax1{
     background-image: url("../medias/img6.jpg");
     background-size: cover;
@@ -143,7 +137,6 @@ iframe{
     }
 }
 
-
 @media screen and (min-width: 481px) and (max-width: 1199px){
 #cache1{
         display: none;
@@ -172,7 +165,6 @@ iframe{
 
 }
 
-
 @media screen and (min-width: 1200px) {
 #cache1{
         display: none;
@@ -198,9 +190,6 @@ iframe{
     }
     .parallax2{
         display: none;
-    }
-    a .href{
-        font-size: 25rem;
     }
 }
 
@@ -242,6 +231,3 @@ iframe{
     z-index: 1;
 }
 
-.coeur{
-    background-image: "../medias/vagues.html";
-}
