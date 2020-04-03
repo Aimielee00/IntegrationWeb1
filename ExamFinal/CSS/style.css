@@ -17,6 +17,14 @@ html,body { margin:0; height:100%;}
     background-size: cover;
     opacity: .8;
 }
+.parallax1 {
+    background-image: url("../medias/vagues.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .8;
+}
 .parallax2 {
     background-image: url("../medias/img1.jpg");
     min-height: 50rem;/
