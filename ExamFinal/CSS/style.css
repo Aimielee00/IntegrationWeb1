@@ -138,6 +138,9 @@ iframe{
     .parallax1{
         display: block;
     }
+    .parallax2{
+        display: none;
+    }
 }
 
 
@@ -163,6 +166,10 @@ iframe{
     .parallax1{
         display: none;
     }
+    .parallax2{
+        display: block;
+    }
+
 }
 
 
@@ -188,6 +195,12 @@ iframe{
 
     .parallax1{
         display: none;
+    }
+    .parallax2{
+        display: none;
+    }
+    a .href{
+        font-size: 25rem;
     }
 }
 
@@ -227,4 +240,8 @@ iframe{
     background-color : black;
     opacity: 0.5;
     z-index: 1;
+}
+
+.coeur{
+    background-image: "../medias/vagues.html";
 }
