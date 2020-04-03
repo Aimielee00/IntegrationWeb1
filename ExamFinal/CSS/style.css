@@ -35,7 +35,9 @@ html,body { margin:0; height:100%;}
 .vague{
     background-image:url("../medias/img7.jpg");
     background-size: cover;
-    min-height: 25%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 
@@ -81,7 +83,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: whitesmoke;
     font-family: "Quicksand Light";
 }
-p,a{
+p{
     color: whitesmoke;
     font-size:1.5rem;
 }
