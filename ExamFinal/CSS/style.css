@@ -3,7 +3,6 @@ Le 18 Mars 2020
 Examen Final integration*/
 
 
-/*Fonte*/
 
 
 
@@ -40,6 +39,7 @@ html,body { margin:0; height:100%;}
 }
 
 
+
 /*footer*/
 .footer{
     background-color: #86cfda;
@@ -56,8 +56,14 @@ html,body { margin:0; height:100%;}
 .white{
     color: white;
 }
+.whitebg{
+    background-color: rgba(15,15,15,0.3);
+}
 .blue{
     background-color: rgba(30,90,180,0.2);
+}
+.grey{
+    color: #494f54;
 }
 
 /*carousel*/
@@ -75,7 +81,7 @@ h1, h2, h3, h4, h5, h6, p{
     color: whitesmoke;
     font-family: "Quicksand Light";
 }
-p{
+p,a{
     color: whitesmoke;
     font-size:1.5rem;
 }
@@ -108,7 +114,6 @@ color: #86cfda;
     h2, h3{
         display:none;
     }
-}
 .cache{
     display: none;
 }
@@ -121,11 +126,15 @@ color: #86cfda;
 .vague{
     display: block;
 }
-
+iframe{
+    display: none
+}
+.videoBG{
+    display: none}
 }
 
 
-@media screen and (min-width: 575px) and (max-width: 1199px) {
+@media screen and (min-width: 575px) and (max-width: 1199px){
 #cache1{
         display: none;
     }
@@ -136,6 +145,12 @@ color: #86cfda;
         display: block;
     }
     .vague{
+        display: none;
+    }
+    iframe{
+        display: none
+    }
+    .videoBG{
         display: none;
     }
 }
@@ -154,17 +169,16 @@ color: #86cfda;
     .vague{
         display: none;
     }
-
+    iframe{
+        display: block
+    }
+    .videoBG{
+        display: block;
+    }
 }
 
 /*Video Background, Index*/
-
-
-.grey{
-    color: #494f54;
-}
-
-#videoBG {
+.videoBG {
     position: relative;
     background-color : black;
     height: 100%;
@@ -172,7 +186,7 @@ color: #86cfda;
     width: 100%;
     overflow: hidden;
 }
-#videoBG iframe {
+.videoBG iframe {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -186,12 +200,10 @@ color: #86cfda;
     -webkit-transform : translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
 }
-
-#videoBG .container {
+.videoBG .container {
     position: relative;
     z-index: 2;
 }
-
 #videoBG .overlay {
     position: absolute;
     top: 0;

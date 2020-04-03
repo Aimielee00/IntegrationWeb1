@@ -1,7 +1,13 @@
+<!-- Fait Par Emilie Fortier-Marcoux
+Le 18 Mars 2020
+Examen Final integration-->
+
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="icon" type="image/png" href="medias/coeur.png" sizes="512x512"/>
     <title>Meditation</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
@@ -11,11 +17,13 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
+
+
 <body>
 
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">RESPIRE</a>
+        <a class="navbar-brand" href="index.html">RESPIRE</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                 aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-ellipsis-h"></i>
@@ -85,38 +93,62 @@
     </div>
 </div>
 
+
+
+
 <!--Section-->
-<div class="container-fluid h-50 bg-light">
+<div class="container-fluid h-50 bg-light d-none d-lg-block">
     <div class="row h-50 align-items-end">
-        <div class="col-12 text-center ">
+        <div class="col-12 text-center">
             <h2 id="Section2P2">Comment vous sentez-vous aujourd'hui?</h2>
         </div>
     </div>
 </div>
 
+<!-- Video BG-->
+<section class="videoBG d-none d-lg-block">
+    <div class="overlay"></div>
+    <iframe src="https://www.youtube.com/embed/vPhg6sc1Mk4?autoplay=1" allow="autoplay" allowfullscreen></iframe>
+    <div class="container-fluid h-100" >
+        <div class="row h-100 text-center align-items-center" >
+            <div class="col-12 text-white" >
+                <h1 class="display-3 ">Écoutez les vagues</h1>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!--Section font-awesome-->
-<div class="container-fluid">
-<div class="row bg-dark">
-        <div class= "card col-4 text-center">
-                <p class="bg-dark">Rien me stress pantoute, moi jsors au tim hortons a chaque jour.</p>
+<div class="container-fluid ">
+<div class="row bg-light text-center">
+    <div class="col-12 mt-5">
+    <h1 class="text-center blue">Alors... Comment ça va aujourd'hui?</h1>
+    </div>
+</div>
+    <div class="row bg-light text-center">
+
+    <div class= "card my-5  col-md-4 col-sm-12 text-center">
+                <p class="bg-dark d-lg-block d-none">Rien me stress pantoute, moi jsors au tim hortons a chaque jour.</p>
                 <i class="far fa-laugh-beam"></i><br>
                 <button type="button" class="btn blue" data-toggle="modal" data-target="#modal1">
                     J'pas stressé.
                 </button>
             </div>
 
-            <div class = "card col-4 text-center">
+            <div class = "card my-5 col-md-4 col-sm-12 text-center">
 
-                <p class="bg-dark">Jtun peu stressée,<br> jrespecte les consignes et tout va bien aller.</p>
+                <p class="bg-dark d-lg-block d-none">Jtun peu stressée,<br> jrespecte les consignes et tout va bien aller.</p>
                 <i class="fas fa-grin-beam-sweat"></i><br>
                 <button type="button" class="btn blue" data-toggle="modal" data-target="#modal2">
                     Moi ça va.
                 </button>
             </div>
 
-            <div class = "card col-4 text-center">
-                <p class="bg-dark">ON VA TOUTE MOURRIR.</p>
+            <div class = "card my-5 col-md-4 col-sm-12 text-center">
+                <p class="bg-dark d-lg-block d-none">ON VA TOUTE MOURRIR.</p>
                 <i class="fas fa-sad-cry"></i><br>
                 <button type="button" class="btn blue" data-toggle="modal" data-target="#modal3">
                     MAY DAY.
@@ -130,6 +162,7 @@
 <div class="modal" tabindex="-1" role="dialog" id="modal1">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
+
             <div class="modal-header">
                 <h5 class="modal-title">Alors vous ne vivez aucun stress?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -137,10 +170,10 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p class="modal-p">Tant mieux</p>
+                <p class="modal-p">Tant mieux!!!</p>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -150,17 +183,17 @@
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Parfait! </h5>
+                <h5 class="modal-title">Tout roule?</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
-                <p class="modal-p">Voici un vidéo de vagues</p>
+                <p class="modal-p">Parfait, tu surf sur les vagues!</p>
                 <iframe width="300" height="300" src="https://www.youtube.com/embed/f77SKdyn-1Y" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
         </div>
     </div>
@@ -176,12 +209,24 @@
                 </button>
             </div>
             <div class="modal-body">
-                <p class="modal-p">Voiçi un vidéo de méditation Express</p>
+                <p class="modal-p">C'est le temps d'une méditation express</p>
                 <iframe width="300" height="300" src="https://www.youtube.com/embed/rfh-f_zNzo8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Fermer</button>
             </div>
+        </div>
+    </div>
+</div>
+
+
+<!--Section desc-->
+<div class = "container-fluid blue mt-0 px-5">
+    <div class = "row  text-center">
+        <div class ="offset-lg-8"></div>
+        <div class ="col-lg-4 col-md-12 text-center blue py-5">
+            <h1>Merci de visiter ce site</h1>
+            <p class="px-5"> Ce site fut realisé à partir d'images libres de droit sur Unsplash.com, les vidéos à partir de youtube.com et le code html et css par Émilie Fortier-Marcoux et sera corrigé par Laurent Drolet dans le cadre du cours Integration1 de la première session du programme Développement web du Cégep de Trois-Rivieres. Merci et à bientot. </p>
         </div>
     </div>
 </div>

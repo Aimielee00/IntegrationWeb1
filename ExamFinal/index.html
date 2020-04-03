@@ -6,6 +6,10 @@ Examen Final integration-->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width,
+initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="medias/coeur.png" sizes="512x512"/>
     <title>On se calme</title>
 
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
@@ -39,31 +43,56 @@ Examen Final integration-->
         </div>
     </nav>
 
+
+
+
 <!--Video Background-->
-<section id="videoBG">
+<section class="videoBG">
     <div class="overlay"></div>
     <iframe src="https://www.youtube.com/embed/Wimkqo8gDZ0?autoplay=1" allow="autoplay" allowfullscreen></iframe>
-        <div class="container h-100" >
+    <div class="container-fluid h-100" >
         <div class="row h-100 text-center align-items-center" >
             <div class="col-12 text-white" >
                 <h1 class="display-3">Bonjour</h1>
                 <p class="lead mb-0">Site relaxant</ p>
+
             </div>
         </div>
     </div>
 </section>
 
 
+<!--Alternatif au Bg-->
+<div class="container-fluid parallax h-100 d-block d-lg-none d-xl-none">
+    <div class="row align-items-center h-100 blue">
+        <div class="offset-lg-8"></div>
+        <div class=" col-lg-4 col-md-12 whitebg">
+            <h1> Bonjour </h1>
+            <p> Site Web relaxant <br>
+            </div>
+        </div>
+    </div>
+</div>
 
 
+<!--Section description 1-->
+<div class = "container-fluid blue mt-4 px-5">
+    <div class = "row text-center">
+        <div class ="offset-lg-9"></div>
+        <div class ="col-lg-3 col-md-12 text-center blue py-5">
+            <h1>Noublie pas...</h1>
+            <p class="px-5"> N'oublie pas de te laver les mains, de ne pas toucher ton visage, garder deux mètres de distances avec les autres et de minimiser tes sorties. </p>
+        </div>
+    </div>
+</div>
 
 
 <!--Section Jumbotron, card et bouton-->
-<div class = "container-fluid">
-<div class="jumbotron text-center">
-    <div class="container-fluid text-center4">
+<div class = "container-fluid my-5 px-5 ">
+<div class="jumbotron text-center blue">
+    <div class="container-fluid text-center4 ">
         <h1 class="grey"> Tu panique?</h1>
-        <p class="lead grey">La méditation et le yoga peuvent vous aider à vous recentrer lors de période de stress intense.
+        <p class="lead grey d-none d-lg-block">La méditation et le yoga peuvent vous aider à vous recentrer lors de période de stress intense.
         Comme par exemple, lorsqu'un virus à couronne propage le monde entier et qu'on se croirait dans un film à rester coincer chez nous.
         Et oui, même si c'est de la grosse m****. Le yoga et la méditation peuvent pas changer le fait qu'il y a une pandémie mondiale.
         Parcontre, ça peut vous aider à voir les choses d'un autre oeil et vous recentrer.  </p>
@@ -76,11 +105,10 @@ Examen Final integration-->
         </button>
 </div>
 </div>
-
 <!-- Modal avec carousel-->
 <section>
-<div class="modal" tabindex="-1" role="dialog" id="ModalAP">
-    <div class="modal-dialog" role="document">
+<div class="modal " tabindex="-1" role="dialog" id="ModalAP">
+    <div class="modal-dialog " role="document">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title"> Relaxez. </h5>
@@ -90,9 +118,15 @@ Examen Final integration-->
             </div>
             <div class="modal-body">
 
+
+                <img class="img-fluid d-none d-sm-block d-md-none" src="medias/img3.jpg" alt="Pieds">
+                <img class="img-fluid d-none d-sm-block d-md-none" src="medias/img2.jpg" alt="Pieds">
+                <img class="img-fluid d-none d-sm-block d-md-none" src="medias/img1.jpg" alt="Pieds">
+
+
                 <!--Carousel-->
 
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <div id="myCarousel" class="carousel slide d-lg-block d-none" data-ride="carousel">
                     <ul class="carousel-indicators">
                         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -106,7 +140,7 @@ Examen Final integration-->
                             <img class="img-fluid" src="medias/img2.jpg" alt="Big Hero 6">
                         </div>
                         <div class="carousel-item">
-                            <img class="img-fluid" src="medias/img3.jpg" alt="Arbre">
+                            <img class="img-fluid" src="medias/img3.jpg" alt="Pieds">
                         </div>
                     </div>
                     <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
@@ -123,6 +157,31 @@ Examen Final integration-->
     </div>
 </div>
 </section>
+
+
+<!--Section description 2-->
+<div class = "container-fluid blue mt-0 mb-4 px-5">
+    <div class = "row  text-center">
+        <div class ="offset-lg-9"></div>
+        <div class ="col-lg-3 col-md-12 text-center blue py-5">
+            <h1> Tout ira pour le mieux si tout le monde reste chez eux.</h1>
+            <p class=" px-5"> Passe le mot. </p>
+        </div>
+    </div>
+</div>
+
+<!--Section Merci-->
+<div class = "container-fluid parallax h-100">
+    <div class = "row  text-center align-items-center h-100">
+        <div class ="col-12 text-center py-5">
+            <h1 class="blue">Merci de visiter ce site</h1>
+            <p class="px-5 blue"> Ce site fut realisé à partir d'images libres de droit sur Unsplash.com, les vidéos à partir de youtube.com et le code html et css par Émilie Fortier-Marcoux et sera corrigé par Laurent Drolet dans le cadre du cours Integration1 de la première session du programme Développement web du Cégep de Trois-Rivieres. Merci et à bientot. </p>
+        </div>
+    </div>
+</div>
+
+
+
 
 <!--Footer-->
 <footer>
